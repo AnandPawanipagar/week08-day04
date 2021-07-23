@@ -1,20 +1,22 @@
 function funOne(a) {
     let call2 = funTwo(a);
-return a*a
+    
+return call2
 }
 function funTwo(b) {
-  let call3 = funThree(b);
   return b*b*b
 }
-function funThree(c) {
-  let call4 = funFour(c);
-  return c*c*c*c
+function funThree(a) {
+  let call4 = funFour(a);
+return call4
 }
-function funFour(d) {
-  let call2 = funTwo(d);
-  return d*d*d*d*d
+function funFour(b) {
+return b*b
 }
+
 let ans=funOne(2);
+let ans2=funThree(3);
+console.log(ans);
+console.log(ans2);
 console.log('All the functios are executed');
 
-//Error showing that maximum call stack exceded.
